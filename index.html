@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="carouselNav.js" defer></script> 
+    <link rel="stylesheet" href="style1.css">
+    <title>Valokuvaus Portfolio</title>
+</head>
+
+<body class="body">
+    <header id="home">
+        <h1>Valokuvaus Portfolio</h1>
+        <p>Tervetuloa sivulleni! Olen intohimoinen valokuvaaja, joka ikuistaa kauneutta ja merkityksellisiä hetkiä kamerani
+            kautta.</p>
+    </header>
+    <nav>
+        <a href="#home">Etusivu</a>
+        <a href="#gallery">Galleria</a>
+        <a href="#about">Tietoa minusta</a>
+        <a href="#projects">Projektit</a>
+        <a href="#contact">Ota yhteyttä</a>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home">Etusivu</a>
+        <a href="#gallery">Galleria</a>
+        <a href="#about">Tietoa minusta</a>
+        <a href="#projects">Projektit</a>
+        <a href="#contact">Ota yhteyttä</a>
+    </div>
+    <div class="hamburger-icon" onclick="toggleMobileNav()">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <section class="gallery" id="gallery">
+        <img src="https://cdn.pixabay.com/photo/2023/08/15/09/21/camera-8191564_1280.jpg" alt="Kamera">
+        <img src="https://cdn.pixabay.com/photo/2023/08/19/05/24/starry-sky-8199764_1280.jpg" alt="Tähdet">
+        <img src="https://cdn.pixabay.com/photo/2023/10/20/03/36/mushrooms-8328101_1280.jpg" alt="Sienet">
+    </section>
+
+    <div class="container" id="about">
+        <div class="left">
+            <h2>Tietoa Minusta</h2>
+            <p>Olen intohimoinen valokuvaaja, joka rakastaa tallentaa hetkiä ikuisiksi muistoiksi. Kamerani on ikään kuin
+                jatke silmilleni, ja pyrin aina ikuistamaan kauneuden yksityiskohdat jokaisessa kuvassa.</p>
+            <p>Valokuvauksen lisäksi nautin matkustamisesta ja uusien paikkojen tutkimisesta. Olen erikoistunut maisemakuviin
+                ja muotokuviin, ja pyrin tuomaan esiin kunkin kohteen ainutlaatuisuuden omalla tyylilläni.</p>
+            <p>Olen avoin yhteistyölle erilaisten projektien parissa, joten ota rohkeasti yhteyttä, jos tarvitset
+                ammattitaitoista valokuvaajaa juhliin, tapahtumiin tai muuhun!</p>
+            <p>Kiitos, että tutustuit sivustooni, ja toivottavasti voimme tehdä yhteistyötä pian!</p>
+        </div>
+        <div class="right" id="projects">
+            <h2>Projekteja</h2>
+            <ul>
+                <li>Maisemakuvat Pohjoisesta</li>
+                <li>Muotokuvat Kaupungin Sykkeessä</li>
+                <li>Vintage-henkiset Hääkuvat</li>
+                <li>Taideprojekti: Valo ja Varjot</li>
+                <li>Matkakuvasarja: Lumo</li>
+            </ul>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img class="carousel-image" src="https://cdn.pixabay.com/photo/2023/08/16/23/49/snail-8195174_1280.jpg" alt="Etana">
+                    <img class="carousel-image" src="https://cdn.pixabay.com/photo/2023/09/18/16/48/green-leaves-8260983_1280.jpg" alt="Lehdet">
+                    <img class="carousel-image" src="https://cdn.pixabay.com/photo/2023/11/04/07/57/owl-8364426_1280.jpg" alt="Pöllö">
+                </div>
+                <button class="prev-button" aria-label="Edellinen kuva"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                <button class="next-button" aria-label="Seuraava kuva"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                <button class="pause-button" aria-label="Pysäytä"><i class="fa fa-stop" aria-hidden="true"></i></button>
+                <button class="play-button" aria-label="Toista"><i class="fa fa-play" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <section class="contact" id="contact">
+            <h2 class="contact-heading">Ota yhteyttä</h2>
+            <p class="contact-description">Halutessasi voit jättää yhteydenottopyynnön</p>
+            <form class="contact-form" action="#" method="post" id="contact-form">
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Viesti:</label>
+                <textarea class="message" name="message" required></textarea>
+                <button class="contact-form-button" type="submit">Lähetä viesti</button>
+            </form>
+        </section> 
+
+        <div class="contact-info">
+            <a href="#"><i class="fa fa-envelope icon"></i></a>
+            <a href="#"><i class="fa fa-facebook icon"></i></a>
+            <a href="#"><i class="fa fa-twitter icon"></i></a>
+            <a href="#"><i class="fa fa-github icon"></i></a>
+            <p>&copy; 2023 Oma Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>
